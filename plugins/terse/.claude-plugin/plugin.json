@@ -1,0 +1,7 @@
+{
+  "name": "terse",
+  "description": "Minimal output in everything the agent writes, always on.",
+  "author": {
+    "name": "chuli"
+  }
+}

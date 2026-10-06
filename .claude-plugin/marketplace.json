@@ -1,0 +1,14 @@
+{
+  "name": "chuli",
+  "owner": {
+    "name": "chuli"
+  },
+  "description": "Plugins for AI agents, written once and shared across tools.",
+  "plugins": [
+    {
+      "name": "terse",
+      "source": "./plugins/terse",
+      "description": "Minimal output in everything the agent writes, always on."
+    }
+  ]
+}
