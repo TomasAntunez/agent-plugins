@@ -9,6 +9,11 @@
       "name": "terse",
       "source": "./plugins/terse",
       "description": "Minimal output in everything the agent writes, always on."
+    },
+    {
+      "name": "git",
+      "source": "./plugins/git",
+      "description": "Git skills: plan and create clean, separate commits."
     }
   ]
 }
