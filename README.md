@@ -19,8 +19,6 @@ claude plugin install terse@chuli
 claude plugin install git@chuli
 ```
 
-The repository is private, so the machine needs read access to it through its own git credentials.
-
 ## Develop
 
 Installed plugins come from the remote, so a change reaches them once it is pushed:
