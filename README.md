@@ -28,7 +28,7 @@ claude plugin validate .
 git push
 ```
 
-With auto-update on for the marketplace (`/plugin` → Marketplaces → `chuli` → Enable auto-update), Claude Code fetches new commits in the background after a session starts; run `/reload-plugins` or start a new session to load them. Plugins carry no `version`, so every commit counts as an update.
+This repo's `.claude/settings.json` declares the marketplace with `autoUpdate` on and enables the `git` plugin, so a session started here fetches new commits in the background; run `/reload-plugins` or start a new session to load them. In other projects, turn auto-update on with `/plugin` → Marketplaces → `chuli` → Enable auto-update. Plugins carry no `version`, so every commit counts as an update.
 
 To update right away: `claude plugin update terse@chuli`.
 
@@ -36,6 +36,7 @@ To update right away: `claude plugin update terse@chuli`.
 
 ```
 .claude-plugin/marketplace.json   # catalog, one entry per plugin
+.claude/settings.json             # marketplace + `git` plugin enabled for this repo
 plugins/<name>/
   .claude-plugin/plugin.json      # Claude Code manifest
   skills/<skill>/SKILL.md         # shared across tools
