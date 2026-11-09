@@ -26,11 +26,13 @@ Leave out anything that should not be committed, like secrets, local configurati
 List each commit with its full message and files, marking files that are only partly included, then list what you left out and why:
 
 ```
-1. fix(auth): reject expired tokens
-   src/auth/token.ts (expiry check only)
-   src/auth/token.test.ts
-2. refactor(auth): extract header parsing
-   src/auth/token.ts (parseHeader)
+fix(auth): reject expired tokens
+  src/auth/token.ts (expiry check only)
+  src/auth/token.test.ts
+
+refactor(auth): extract header parsing
+  src/auth/token.ts (parseHeader)
+
 Left out: .env.local (secrets), scratch.py (not part of this work)
 ```
 
